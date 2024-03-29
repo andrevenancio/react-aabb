@@ -18,6 +18,6 @@
     /* If your code runs in the DOM: */
     "lib": ["es2022", "dom", "dom.iterable"],
     /* If your code exports React */
-    "jsx": "preserve"
+    "jsx": "react"
   }
 }
