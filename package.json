@@ -1,7 +1,7 @@
 {
   "name": "react-aabb",
   "license": "MIT",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,22 +9,32 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "aabb",
+    "bounding box"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrevenancio/react-aabb.git"
+  },
+  "homepage": "https://github.com/andrevenancio/react-aabb",
+  "bugs": {
+    "url": "https://github.com/andrevenancio/react-aabb/issues"
+  },
+  "author": "Andre Venancio <info@andrevenancio.com>",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "release": "pnpm run build && changeset publish"
+    "release": "npm publish"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
     "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.23",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
     "tsup": "^8.0.2",
     "typescript": "^5.4.3"
